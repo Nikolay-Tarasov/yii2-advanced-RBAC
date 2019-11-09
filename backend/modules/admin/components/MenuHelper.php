@@ -3,7 +3,6 @@ namespace backend\modules\admin\components;
 
 use Yii;
 use yii\caching\TagDependency;
-//use mdm\admin\models\Menu;
 use backend\modules\admin\models\Menu;
 
 /**
@@ -155,7 +154,6 @@ class MenuHelper
                 $assigned[$l++] = $parent_id;
             }
         }
-
         return $assigned;
     }
 

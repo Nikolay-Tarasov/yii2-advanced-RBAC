@@ -7,7 +7,7 @@ use yii\helpers\Html;
 /* @var $this \yii\web\View */
 /* @var $content string */
 
-list(, $url) = Yii::$app->assetManager->publish('@mdm/admin/assets');
+list(, $url) = Yii::$app->assetManager->publish('@app/modules/admin/assets');
 $this->registerCssFile($url . '/main.css');
 ?>
 <?php $this->beginPage() ?>
@@ -43,6 +43,7 @@ NavBar::end();
 ?>
 
 <div class="container">
+    <h1>modules\admin\layout</h1>
     <?= $content ?>
 </div>
 

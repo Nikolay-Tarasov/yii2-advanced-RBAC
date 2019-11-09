@@ -11,16 +11,12 @@ use Yii;
  */
 class DefaultController extends \yii\web\Controller
 {
-
+    public $layout = 'main.php';
     /**
      * Action index
      */
-    public function actionIndex($page = 'README.md')
+    public function actionIndex()
     {
-        if (strpos($page, '.png') !== false) {
-            $file = Yii::getAlias("@app/modules/admin/{$page}");
-            return Yii::$app->getResponse()->sendFile($file);
-        }
-        return $this->render('index', ['page' => $page]);
+        return $this->render('index');
     }
 }
