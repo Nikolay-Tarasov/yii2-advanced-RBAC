@@ -4,7 +4,7 @@ namespace backend\modules\admin\models\searchs;
 use Yii;
 use yii\base\Model;
 use yii\data\ArrayDataProvider;
-use mdm\admin\components\Configs;
+use backend\modules\admin\components\Configs;
 use yii\rbac\Item;
 
 /**

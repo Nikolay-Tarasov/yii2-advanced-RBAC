@@ -3,7 +3,7 @@ namespace backend\modules\admin\models;
 
 use Yii;
 use yii\rbac\Rule;
-use mdm\admin\components\Configs;
+use backend\modules\admin\components\Configs;
 
 /**
  * BizRule

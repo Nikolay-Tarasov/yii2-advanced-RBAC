@@ -2,8 +2,8 @@
 
 use yii\helpers\Html;
 use yii\grid\GridView;
-use mdm\admin\components\RouteRule;
-use mdm\admin\components\Configs;
+use backend\modules\admin\components\RouteRule;
+use backend\modules\admin\components\Configs;
 
 /* @var $this yii\web\View */
 /* @var $dataProvider yii\data\ActiveDataProvider */

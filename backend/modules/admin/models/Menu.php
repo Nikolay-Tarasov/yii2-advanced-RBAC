@@ -2,7 +2,7 @@
 namespace backend\modules\admin\models;
 
 use Yii;
-use mdm\admin\components\Configs;
+use backend\modules\admin\components\Configs;
 use yii\db\Query;
 
 /**

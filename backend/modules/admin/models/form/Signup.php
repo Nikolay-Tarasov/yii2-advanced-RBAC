@@ -54,7 +54,7 @@ class Signup extends Model
             $user = new $class();
             $user->username = $this->username;
             $user->email = $this->email;
-            $user->status = ArrayHelper::getValue(Yii::$app->params, 'user.defaultStatus', UserStatus::ACTIVE);
+            $user->status = ArrayHelper::getValue(Yii::$app->params, 'user.defaultStatus', UserStatus::INACTIVE);
             $user->setPassword($this->password);
             $user->generateAuthKey();
             if ($user->save()) {

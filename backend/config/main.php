@@ -25,7 +25,6 @@ return [
             'class' => 'yii\rbac\DbManager', // or use 'yii\rbac\DbManager'
         ],
         'user' => [
-            //'identityClass' => 'common\models\User',
             'identityClass' => 'backend\modules\admin\models\User',
             'enableAutoLogin' => true,
             'identityCookie' => ['name' => '_identity-backend', 'httpOnly' => true],
@@ -54,14 +53,12 @@ return [
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],
-        /*
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
             ],
         ],
-        */
     ],
     'params' => $params,
 ];

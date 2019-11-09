@@ -1,8 +1,9 @@
 <?php
 namespace backend\modules\admin\models;
 
-use mdm\admin\components\Configs;
-use mdm\admin\components\Helper;
+use backend\modules\admin\BaseObject;
+use backend\modules\admin\components\Configs;
+use backend\modules\admin\components\Helper;
 use Yii;
 
 /**
@@ -11,7 +12,7 @@ use Yii;
  * @author Misbahul D Munir <misbahuldmunir@gmail.com>
  * @since 2.5
  */
-class Assignment extends \mdm\admin\BaseObject
+class Assignment extends BaseObject
 {
     /**
      * @var integer User id
