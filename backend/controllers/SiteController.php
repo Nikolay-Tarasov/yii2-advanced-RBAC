@@ -12,7 +12,7 @@ class SiteController extends Controller
     public function actionIndex()
     {
         if (!Yii::$app->user->isGuest) {
-            return 2;
+            return 3;
             die;
         }
         return $this->render('index');
